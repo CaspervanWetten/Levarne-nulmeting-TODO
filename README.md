@@ -1,5 +1,5 @@
 # Levarne nulmeting
-Dit is mijn implementatie van de TODO list opdracht van de Levarne nulmeting. De generieke opdrachten zijn (hier)[https://github.com/CaspervanWetten/Levarne-Nulmeting] te vinden
+Dit is mijn implementatie van de TODO list opdracht van de Levarne nulmeting. De generieke opdrachten zijn [hier](https://github.com/CaspervanWetten/Levarne-Nulmeting) te vinden
 
 ### Persoonlijke notities
 Het klikken van de knop roept globalStore.getTodo(key) waar key de meegegeven parameter uit de input eronder getrokken wordt (te zien door de v-model attribute van de <input> tag). Dit roept de backend API en pusht het, als todo.id niet al bestaande is, naar de todos array.   
