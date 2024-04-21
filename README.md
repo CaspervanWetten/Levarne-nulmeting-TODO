@@ -1,42 +1,7 @@
-# Nuxt 3 Minimal Starter
+# Levarne nulmeting
+Dit is mijn implementatie van de TODO list opdracht van de Levarne nulmeting.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Persoonlijke notities
+Het klikken van de knop roept globalStore.getTodo(key) waar key de meegegeven parameter uit de input eronder getrokken wordt (te zien door de v-model attribute van de <input> tag). Dit roept de backend API en pusht het, als todo.id niet al bestaande is, naar de todos array.
+Reactive arrays in vue zijn wat funky, door een reactive([]) aan te maken en de lengte op 0 te zetten forceer je een ander object te werken als een array (ik snap het niet, gestolen van SO). De linter geeft errors, maar het werkt wel gewoon dus ????
+met const bool = ref(false) kan je een 'reactive' boolean opzetten wat <html> tags met de v-if attribute conditioneel kan laten renderen, oprecht best cool. 
